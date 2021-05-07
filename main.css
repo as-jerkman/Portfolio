@@ -1,0 +1,213 @@
+body {
+  /* background-color: #212529 !important; */
+  background-color: black !important;
+  padding: 2px;
+  font-family: "Lora", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.namediv {
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.name-h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.title {
+  position: relative;
+  z-index: 100;
+  font-size: 15px;
+  font-weight: 20;
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+.lightbulb-img {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin: 10px auto 20px;
+  margin-top: -75px;
+  margin-bottom: 0;
+  z-index: 0;
+  display: block;
+}
+
+.lightbulb-div {
+  position: relative;
+}
+
+.footer {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  top: 4em;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  font-weight: 50;
+}
+
+#nav {
+  display: inline;
+  text-align: center;
+  margin-top: -100;
+  position: relative;
+  z-index: 100;
+}
+
+#navrow {
+  position: relative;
+  z-index: 100;
+  margin-top: -35px;
+}
+
+.about-btn {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.about-btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#about-h2 {
+  color: black;
+  font-size: medium;
+  padding: 0 auto;
+  margin-bottom: auto;
+}
+
+#about-h4 {
+  font-size: small;
+  padding: 0;
+  margin-top: 0 auto;
+}
+
+.close-btn {
+  border: none;
+  background-color: white;
+}
+
+.about-header {
+  color: black;
+  letter-spacing: normal;
+  font-size: large;
+  text-align: center;
+}
+
+#about-body {
+  font-size: 10px;
+}
+
+#about-modal {
+  background-color: white;
+}
+
+.modal {
+  background-color: black;
+}
+
+#me-pic {
+  width: 250px;
+  height: 170px;
+  border: solid black;
+}
+
+#about-p {
+  font-size: 6px;
+}
+
+.portfolio-btn {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.portfolio-btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-btn {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+/* Buttons */
+.btn-one {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.btn-one span {
+  transition: all 0.3s;
+}
+
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
