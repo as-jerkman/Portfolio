@@ -7,6 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* HEADER */
+.contact-me {
+  text-align: right;
+  position: relative;
+  right: 20px;
+  color: white;
+}
+
+#a-header {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.git {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  width: 40px;
+}
+
 .namediv {
   border: solid;
   border-color: rgba(255, 255, 255, 0.5);
@@ -36,6 +56,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* LIGHTBULB */
 .lightbulb-img {
   width: 300px;
   height: 200px;
@@ -51,11 +72,34 @@ body {
   position: relative;
 }
 
-.footer {
-  width: 100%;
-  text-align: left;
+.glow {
   position: relative;
-  top: 4em;
+  top: 1.75em;
+  left: calc(49% - 20px);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(250, 251, 167);
+  box-shadow: 0 0 60px 30px rgb(246, 246, 204),
+    0 0 100px 60px rgb(238, 245, 197), 0 0 140px 90px rgb(177, 180, 144);
+  opacity: 0.15;
+  z-index: 2;
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.footer {
+  width: 80%;
+  text-align: left;
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  height: 2%;
   color: rgba(255, 255, 255, 0.5);
   font-size: 10px;
   font-weight: 50;
@@ -64,8 +108,6 @@ body {
 #nav {
   display: inline;
   text-align: center;
-  margin-top: -100;
-  position: relative;
   z-index: 100;
 }
 
@@ -88,38 +130,95 @@ body {
 }
 
 #about-h2 {
-  color: black;
   font-size: medium;
   padding: 0 auto;
   margin-bottom: auto;
+  color: white;
 }
 
 #about-h4 {
   font-size: small;
   padding: 0;
   margin-top: 0 auto;
+  color: white;
 }
 
-.close-btn {
-  border: none;
-  background-color: white;
+/* PORTFOLIO */
+/* MODAL */
+#modal-content {
+  background-color: black;
 }
 
-.about-header {
+#typing-text {
+  color: white;
+}
+
+#a-portfolio {
+  text-decoration: none;
   color: black;
-  letter-spacing: normal;
-  font-size: large;
-  text-align: center;
 }
 
-#about-body {
-  font-size: 10px;
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
 
-#about-modal {
-  background-color: white;
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
 }
 
+#modal-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+
+#contact-modal-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 20px;
+}
+
+#modal-close {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+/* CARDS */
+#card {
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 2px;
+}
+
+/* ABOUT */
+/* HEADER */
+.about-header {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+
+#about-modal-all {
+  background-color: black;
+}
 .modal {
   background-color: black;
 }
@@ -127,11 +226,13 @@ body {
 #me-pic {
   width: 250px;
   height: 170px;
-  border: solid black;
+  border: solid white;
+  margin-top: 2em;
 }
 
 #about-p {
   font-size: 6px;
+  color: white;
 }
 
 .portfolio-btn {

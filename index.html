@@ -21,6 +21,17 @@
   </head>
 
   <body">
+    <header class="contact-me">
+      <a href="https://github.com/JoshErkman" target="_blank" id="a-header">
+        <img class="git" style="width: 15px" src="Assets/github_invert.png" title="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/josh-erkman-0367b51a7/" target="_blank" id="a-header">
+        <img class="git" style="width: 15px" src="/Assets/linkedin_invert.png" title="LinkedIn">
+      </a>
+      <a href="https://pdfhost.io/v/9UV72FBxk_Josh_Erkman_Resume_5_9_2021pdf.pdf" target="_blank" id="a-header"> 
+        <img class="git" style="width: 15px" src="/Assets/resume_invert.png" title="Resume">
+      </a>
+    </header>
     <div class="allbody">
       <div class="container text-center">
         <div class="namediv">
@@ -28,6 +39,7 @@
         </div>
         <h2 class="title">Software Developer</h2>
       </div>
+      <div class="glow"></div>
       <div class="lightbulb-div">
         <img class="lightbulb-img" src="Assets/lightbulb.jpg">
       </div>
@@ -63,11 +75,11 @@
 
             <div class="modal fade" id="about">
               <div class="modal-dialog modal-xl">
-                <div class="modal-content" id="about-modal">
+                <div class="modal-content" id="about-modal-all">
                   <div class="modal-header">
                     <h5 class="about-header">About</h5>
-                    <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
+                    <button type="button" id="modal-close" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">×</span>
                     </button>
                   </div>
                   <div class="modal-body" id="about-body">
@@ -76,7 +88,20 @@
                         <div class="col">
                           <h2 id="about-h2">Hi!</h2>
                           <h4 id="about-h4">My name is Josh.</h4>
-                          <p id="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati laudantium minus deleniti! Necessitatibus incidunt eum beatae delectus, atque dicta voluptatum. Error natus labore voluptates commodi quae aliquam ratione aliquid.</p>
+                          <p id="about-p"> I am originally from Evansville, Indiana but moved to the Indianapolis area about 6 years ago when I met my wife.
+                            <br>
+                            <br>
+                              I enjoy spending time with family and friends, spoiling my miniature dachshunds, keeping my lawn to perfection, and playing darts.
+                            <br>
+                            <br>
+                                The majority of my work history has been spent in the construction industry. I decided that I wanted to pursue something that I was interested in and went back to school at Ivy Tech in March of 2020 with a major in Software Development. I made the switch to Eleven Fifty Academy in November of 2020, and I can confidently say that this career transition is the right choice for me. I love software development.
+                            <br>
+                            <br>
+                                  I consider myself to be a logical and literal thinker. I am great at problem-solving and enjoy rising up to conquer challenges. I love learning new things, and in this field, I have learned there is no limit on knowledge. I like to work with people, network, and build relationships. I am determined, focused, and hard-working.
+                              <br>
+                              <br>
+                                  I cannot wait to see where software development takes me. The future is looking bright.
+                          </p>
                         </div>
                         <div class="col">
                           <img id="me-pic" src="Assets/output-onlineimagetools (1).png">
@@ -96,17 +121,53 @@
           <div class="col-md-12">
             <div class="modal fade" id="portfolio">
               <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-content">
                   <div class="modal-header">
-                    <h1 class="portfolio-header">Portfolio</h1>
+                    <h5 class="modal-title" id="modal-title" style="text-align: left;">Portfolio</h5>
+                    <button type="button" class="close close-btn" id="modal-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">×</span>
+                    </button>
                   </div>
-                  <div class="modal-body">This is Body</div>
-                  <div class="modal-footer">
-                    <input
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                      value="Close"
-                    />
+                  <div class="modal-body">
+                    <div class="card-columns">
+                      <div class="card" id="card">
+                        <img class="card-img-top" src="Assets/DWF_thumbnail.png" alt="Card Image">
+                        <div class="card-body">
+                          <h5 class="card-text" style="text-align: center;">
+                            <a id="a-portfolio" href="https://github.com/JoshErkman/DartsWithFriends" target="_blank">Dartin' With Friends MVC Application</a>
+                          </h5>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="card" id="card">
+                        <img class="card-img-top" src="Assets/KaleMeCrazyLogoFinal.png" alt="Card Image">
+                        <div class="card-body">
+                          <h5 class="card-text">
+                            <a id="a-portfolio" href="#" target="_blank">Kale Me Crazy Web API</a>
+                          </h5>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="card" id="card">
+                        <img class="card-img-top" src="Assets/theseige_thumbnail.png" alt="Card Image">
+                        <div class="card-body">
+                          <h5 class="card-text">"The Seige" static store front</h5>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="card" id="card">
+                        <img class="card-img-top" src="Assets/scripture.jpg" alt="Card Image">
+                        <div class="card-body">
+                          <h5 class="card-text">
+                            <a id="a-portfolio" href="#"> Sword And Shield MVC Application</a>
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <p id="typing-text">More projects to come...!</p>
+                      </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -115,31 +176,43 @@
         </div>
       </div>
 
-      <!--Contact Me Modal-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="modal fade" id="contactMe">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+      <!--Contact Modal-->
+
+            <div class="modal fade show" id="contactMe">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content" id="modal-content">
                   <div class="modal-header">
-                    <h1>About</h1>
+                    <h5 class="modal-title" id="contact-modal-title">Send Me A Message</h5>
+                    <button type="button" class="close close-btn" id="modal-close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: white;">×</span>
+                    </button>
                   </div>
-                  <div class="modal-body">This is Body</div>
-                  <div class="modal-footer">
-                    <input
-                      class="btn btn-default"
-                      data-dismiss="modal"
-                      value="Close"
-                    />
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <form style="width: 100%; padding-left: 20px; padding-right: 20px;" action="https//formspree.io/erkman.josh@gmail.com" method="POST">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Your Name" id="name" required="" data-validation-required-message="Please enter your name" name="name">
+                              <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control" style="margin-top:20px" placeholder="Your Email" id="email" required="" data-validation-required-message="Please enter your email" name="_replyto">
+                              <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                              <textarea style="margin-top: 20px;" placeholder="Your message" class="form-control" rows="7" required data-validation-required-message="Please leave a message." name="message"></textarea>
+                              <p class="help-block text-danger"></p>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
+    
       <foot class="footer">
         <p>&copy; Josh Erkman</p>
       </foot>
