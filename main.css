@@ -18,6 +18,8 @@ body {
 #a-header {
   background-color: transparent;
   text-decoration: none;
+  /* width: 180px;
+  height: 180px; */
 }
 
 .git {
