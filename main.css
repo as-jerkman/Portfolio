@@ -54,6 +54,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 20px;
   position: relative;
+  display: flex;
+  text-align: center;
+  margin-left: 200px;
   z-index: 100;
 }
 
