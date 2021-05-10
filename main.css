@@ -29,6 +29,15 @@ body {
   width: 40px;
 }
 
+#message-send-btn {
+  border: solid 2px white;
+  background-color: black;
+  border-radius: 4px;
+  width: 100px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
 .namediv {
   border: solid;
   border-color: rgba(255, 255, 255, 0.5);
